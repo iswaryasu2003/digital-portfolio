@@ -1,0 +1,212 @@
+/* Reset default margins and padding */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default font and background colors */
+body {
+    font-family: Arial, sans-serif;
+    background: url("nature.jpg") no-repeat center center fixed;
+}
+
+/* Header styles */
+header {
+    text-align: left;
+    color: #ffffff;
+    padding: 15px 0;
+    background: url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Align items left and right */
+    align-items: center;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: transparent; /* Semi-transparent black */
+    text-align: right;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Home section styles */
+.home-section {
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 50px; /* Add margin to avoid overlap with header */
+}
+.size {
+    font-size:120px;
+    color: #00fff7;
+}
+.home-bg {
+    background: url("nature.jpg") no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    height: 65vh; /* Set the height to 100% of the viewport height */
+    margin-top: -20px; /* Remove any default margin on the top */
+}
+
+/* About Us section styles */
+.split-section {
+    display: flex; /* Use Flexbox to split the section into two columns */
+    height: 100vh; /* Full-screen height */
+}
+
+.about-image {
+    flex: 1; /* Equal width for both columns */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.about-image img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    height: 100vh; /* Maintain image aspect ratio */
+    display: flex; /* Nested flex container to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.about-description {
+    flex: 1; /* Equal width for both columns */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #fff; /* Background color for the description column */
+    height: 200px;
+    margin-top: 17%;
+}
+
+/* Services section styles */
+.carousel-section {
+    text-align: center;
+    background: url("nature.jpg") no-repeat center center fixed;
+    margin-top: 20px;
+}
+
+.image-carousel {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    flex: 0 0 100%; /* Equal width for all images */
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    height: 80vh; /* Maintain image aspect ratio */
+}
+
+a.carousel-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+}
+
+a.carousel-number:hover {
+    background: #333;
+}
+
+/* Updated Contact Us Section Styles */
+.contact-section {
+    background: url("nature.jpg") no-repeat center center fixed;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact form {
+    max-width: 400px;
+    text-align: left;
+}
+
+#contact label {
+    display: inline-block; /* Display labels and inputs in the same line */
+    width: auto; /* Adjust the label width as needed */
+    text-align: left; /* Right-align labels */
+    margin: 10px 10px; /* Add spacing between label-input pairs */
+    font-size:larger;
+    font-weight: 200;
+    background: #ededed;
+}
+
+#contact input,
+#contact textarea {
+    display: inline-block; /* Display inputs inline with labels */
+    width: 100%; /* Adjust the input width as needed */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#contact input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block; /* Allow the submit button to take up the full width */
+    margin: 10px auto; /* Center the submit button */
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

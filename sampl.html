@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Iswarya Technologies</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <h1>Iswarya Technologies</h1>
+    </header>
+
+    <section id="home" class="home-section home-bg">
+      <p class="size">Iswarya Technologies</p>
+      <h1>1234 Main Street, City, Country</h1>
+    </section>
+
+    <section id="about" class="split-section">
+      <div class="about-image">
+        <img src="about.jpg" alt="About Us" />
+      </div>
+      <div class="about-description">
+        <h2>About Us</h2>
+        <p>
+          We strive to understand the challenges that the industry is facing
+          today and use our strong business acumen to find exclusive and
+          unprecedented solutions for them. Our mission is to bring good quality
+          embedded in the innovative techniques that are designed by our
+          tech-experts. Our presence of more than a decade in the industry and
+          our services to a portfolio of great clients set us apart. We believe
+          in customization that caters to your business needs. With the primary
+          goal of serving the planet, we optimize the use of technology
+          integrated with human potential.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="carousel-section">
+      <h2>Services</h2>
+      <div class="image-carousel">
+        <div class="carousel">
+          <img
+            class="carousel-image"
+            src="img.png"
+            alt="Service 1"
+            id="image-1"
+          />
+          <img
+            class="carousel-image"
+            src="img1.png"
+            alt="Service 2"
+            id="image-2"
+          />
+          <img
+            class="carousel-image"
+            src="img2.png"
+            alt="Service 3"
+            id="image-3"
+          />
+          <img
+            class="carousel-image"
+            src="img3.png"
+            alt="Service 4"
+            id="image-4"
+          />
+        </div>
+      </div>
+      <a href="#image-1" class="carousel-number">1</a>
+      <a href="#image-2" class="carousel-number">2</a>
+      <a href="#image-3" class="carousel-number">3</a>
+      <a href="#image-4" class="carousel-number">4</a>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <form action="submit_contact.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <footer>&copy; 2023 Iswarya Technologies</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
